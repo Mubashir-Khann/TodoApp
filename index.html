@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+  </head>
+  <body>
+    <div class="fullScreen">
+      <div class="mainBox">
+        <div class="NameDiv">
+          <h3 class="nameSignup">SignUp</h3>
+        </div>
+
+        <div class="Emaildiv">
+          <input
+            id="Email"
+            class="Emailinput"
+            type="email"
+            placeholder="Email" />
+        </div>
+
+        <div class="PasswordDiv">
+          <input
+            id="Pass"
+            class="Passwordinput"
+            placeholder="Password"
+            type="password" />
+        </div>
+
+        <div class="butonDiv">
+          <button onclick="signUp()" class="Button" type="button">Next</button>
+        </div>
+      </div>
+    </div>
+    <button onclick="loginfnc()" class="Loginbtn">SignIn</button>
+    <script src="app.js"></script>
+  </body>
+</html>
